@@ -7,10 +7,10 @@ npm i
 # 本地开发（webpack）
 npm run start-webpack
 
-# 本地开发（webpack）
-npm run build-webpack
+# vite
+npm run start-vite
 
-# 本地开发（vite）
+# 打包（vite）
 npm run  build
 
 
