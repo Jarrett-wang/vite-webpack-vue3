@@ -5,18 +5,21 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import {VueLoaderPlugin} from 'vue-loader';
-const pathResolve = _path => path.join(__dirname, '../..', _path);;
+// const pathResolve = _path => path.join(__dirname, '../..', _path);
+function pathResolve(dir) {
+    return path.join(__dirname, '../..', dir);
+}
 
 const config: webpack.Configuration | webpack.WebpackOptionsNormalized  = {
     entry: './src/main.ts',
     output: {
-        path: pathResolve('./dist'),
+        path: pathResolve('dist'),
         filename: '[name].bundle.js'
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"],
         alias: {
-            '@': pathResolve('./src'),
+            '@': pathResolve('src'),
         }
     },
     module: {
