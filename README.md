@@ -10,7 +10,7 @@ npm run start-webpack
 # vite
 npm run start-vite
 
-# 打包（vite）
+# webpack
 npm run  build
 
 
