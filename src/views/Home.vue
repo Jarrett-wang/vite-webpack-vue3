@@ -1,5 +1,5 @@
 <template>
-    <div>这是home页面</div>
+    <div>这是home页面4</div>
     <div>{{ helloConst }}</div>
 </template>
 <script>
